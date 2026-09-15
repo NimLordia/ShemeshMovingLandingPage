@@ -88,6 +88,10 @@ details>p{padding:0 0 24px 35px;font-size:17px;color:var(--muted);line-height:1.
 .closing-inner .eyebrow{margin-bottom:10px}
 .closing-inner h2{font-size:52px}
 .site-footer{padding-block:30px;font-size:14px}
+.analytics-notice{margin-top:24px;border-bottom:1px solid var(--line)}
+.analytics-notice summary{font-size:14px;padding-block:12px}
+.analytics-notice>p{font-size:14px;padding:0 0 16px;max-width:850px}
+.analytics-notice a{text-decoration:underline;text-underline-offset:3px}
 .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
 .footer-inner>p:first-child{font-weight:700}
 .footer-inner>p:first-child span{font-weight:400;margin-inline-start:8px}
