@@ -19,6 +19,8 @@ Connect the real measurement account and an appropriate privacy/consent setup be
 
 Quote messages are prepared locally. Visitors complete and send them in WhatsApp. The pages have no lead database, external scripts, cookies, or browser storage. Contact links also work without JavaScript, with shorter service-specific messages.
 
+All contact links open WhatsApp, including the displayed contact number in the header and footer. The mobile bar has one full-width WhatsApp button. Telephone auto-detection is disabled; there are no phone-call links.
+
 ## Hosting
 
 Serve this directory with any static server. Publish the two HTML pages, stylesheet, script, original poster, PNG favicon, three Heebo font files, and font license to a hosting provider suitable for commercial sites. Use the selected final domain in campaign URLs. The source can stay on GitHub independently of hosting.

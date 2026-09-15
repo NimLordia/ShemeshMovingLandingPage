@@ -18,12 +18,12 @@ const fields = [
 ];
 const messageUrl = 'https://wa.me/972508804928?text=' + encodeURIComponent([intro, '', ...fields].join('\n'));
 
-document.querySelectorAll('[data-contact]').forEach((link) => {
-  if (link.dataset.contact === 'whatsapp') link.href = messageUrl;
+document.querySelectorAll('[data-contact="whatsapp"]').forEach((link) => {
+  link.href = messageUrl;
   link.addEventListener('click', () => {
     window.dataLayer.push({
       event: 'contact_click',
-      contact_method: link.dataset.contact,
+      contact_method: 'whatsapp',
       contact_placement: link.dataset.placement,
       service_type: serviceType
     });

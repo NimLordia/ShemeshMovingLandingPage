@@ -23,8 +23,8 @@ h1,h2,h3{line-height:1.12;letter-spacing:normal}
 nav{display:flex;gap:32px;font-size:15px}
 nav a{padding-block:12px;border-bottom:1px solid transparent}
 nav a:hover{border-bottom-color:var(--ink)}
-.header-phone{text-align:left;font-size:19px;font-weight:700;line-height:1.3}
-.header-phone span{display:block;font-size:13px;font-weight:400;margin-bottom:4px}
+.header-contact{text-align:left;font-size:19px;font-weight:700;line-height:1.3}
+.header-contact span{display:block;font-size:13px;font-weight:400;margin-bottom:4px}
 .hero{background:var(--blue);padding:58px 0 68px;overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:1.2fr .9fr;gap:70px;align-items:center}
 .eyebrow{font-size:14px;font-weight:600;margin-bottom:18px;display:flex;align-items:center;gap:12px}
@@ -100,7 +100,7 @@ details>p{padding:0 0 24px 35px;font-size:17px;color:var(--muted);line-height:1.
   .container{width:calc(100% - 40px)}
   .header-inner{min-height:82px;gap:16px}
   .brand{font-size:22px}.brand img{width:44px;height:44px}.brand small{font-size:12px;margin-top:4px}
-  nav{display:none}.header-phone{font-size:16px}.header-phone span{font-size:12px}
+  nav{display:none}.header-contact{font-size:16px}.header-contact span{font-size:12px}
   .hero{padding:38px 0 46px}.hero-grid{grid-template-columns:1fr;gap:44px}
   .hero-copy{max-width:580px}.eyebrow{font-size:13px;margin-bottom:17px}
   h1{font-size:clamp(44px,10vw,68px);line-height:1.08}
@@ -116,8 +116,8 @@ details>p{padding:0 0 24px 35px;font-size:17px;color:var(--muted);line-height:1.
   .faq-grid{gap:27px}summary{font-size:17px;padding-block:20px;gap:16px}details>p{font-size:16px;padding-left:14px}
   .closing-section{padding-block:37px}.closing-inner{align-items:start;flex-direction:column;gap:23px}.closing-inner h2{font-size:42px}
   .site-footer{padding-block:27px 108px}.footer-inner{flex-direction:column;align-items:start;gap:8px;font-size:13px}.footer-inner>a:last-child{margin-top:7px}
-  .mobile-contact{position:fixed;z-index:20;bottom:0;right:0;left:0;display:grid;grid-template-columns:.65fr 1.6fr;gap:8px;background:var(--white);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -4px 20px rgb(33 31 32 / 7%)}
+  .mobile-contact{position:fixed;z-index:20;bottom:0;right:0;left:0;display:grid;grid-template-columns:1fr;gap:8px;background:var(--white);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -4px 20px rgb(33 31 32 / 7%)}
   .mobile-contact>a{display:flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--ink);border-radius:5px;min-height:48px;padding:9px;font-size:15px;font-weight:700;line-height:1.3}.mobile-contact>.mobile-whatsapp{background:var(--ink);color:var(--white)}
 }
-@media(max-width:360px){.container{width:calc(100% - 32px)}.brand{font-size:19px;gap:6px}.brand img{width:37px;height:37px}.header-phone{font-size:14px}h1{font-size:43px}.hero-actions .button{width:100%}.hero-actions .text-link{padding-top:0}.mobile-contact>a{font-size:14px}}
+@media(max-width:360px){.container{width:calc(100% - 32px)}.brand{font-size:19px;gap:6px}.brand img{width:37px;height:37px}.header-contact{font-size:14px}h1{font-size:43px}.hero-actions .button{width:100%}.hero-actions .text-link{padding-top:0}.mobile-contact>a{font-size:14px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
