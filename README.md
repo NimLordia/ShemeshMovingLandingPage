@@ -9,11 +9,24 @@ Hebrew RTL static pages built from the original company poster and favicon.
 
 Both use `styles.css`, `campaign.js`, `shemesh-original.jpg`, and `favicon.png`. The original brand assets are unchanged. Hebrew Heebo font files are self-hosted, with their license in `OFL-Heebo.txt`. Each page has distinct search metadata, service copy, FAQ content, and WhatsApp messages. There are discreet links between the two pages.
 
-Pickup and destination are both within Haifa and the Krayot. Disassembly/reassembly is available as part of moving, not as a standalone handyman service. The pages contain no invented reviews, guarantees, insurance claims, or fixed price promises.
+Pickup and destination must both be within the service area below. Disassembly/reassembly is available as part of moving, not as a standalone handyman service. The pages contain no invented reviews, guarantees, insurance claims, or fixed price promises.
+
+## Service area
+
+Updated on 2026-09-16 from the owner's instructions:
+
+- Base: Haifa; Haifa and the Krayot are included.
+- East: up to and including Kiryat Tivon.
+- North: up to Acre (Akko), excluding Acre itself.
+- South: up to and including Pardes Hanna.
+- Include all Hof HaCarmel communities.
+- Both pickup and destination must be inside this area; a job does not have to start or end in Haifa.
+
+These boundaries apply to both service pages. Page copy and WhatsApp templates reflect them; website changes do not configure Google Ads or Meta location targeting.
 
 ## Analytics
 
-Both pages use Google Analytics 4 measurement ID `G-DCFPN7JWW8`, configured once per page in `campaign.js`. The Google tag loads only on `shemeshmovingaddcampaign.netlify.app`, excluding localhost and Netlify deploy previews. If the public domain changes, update that hostname check before deploying.
+Both pages use Google Analytics 4 measurement ID `G-DCFPN7JWW8`, configured once per page in `campaign.js`. The Google tag loads only on the exact hostnames `shemesh-moving.co.il`, `www.shemesh-moving.co.il`, and `shemeshmovingaddcampaign.netlify.app`, excluding localhost and Netlify deploy previews. If another public domain is added, update this hostname allowlist before deploying.
 
 The tag sends an automatic `page_view` and assigns `content_group` and `service_type` as `small` or `apartment`. Standard page URLs, query parameters and referrers are preserved for traffic attribution. Avoid putting personal information in campaign URLs.
 
@@ -37,9 +50,20 @@ All contact links open WhatsApp, including the displayed contact number in the h
 
 Serve this directory with any static server. Publish the two HTML pages, stylesheet, script, original poster, PNG favicon, three Heebo font files, and font license to a hosting provider suitable for commercial sites. Use the selected final domain in campaign URLs. The source can stay on GitHub independently of hosting.
 
-Production pages:
+Preferred final URLs, with `www.shemesh-moving.co.il` as primary:
+
+- Small moves: https://www.shemesh-moving.co.il/
+- Apartments: https://www.shemesh-moving.co.il/apartments.html
+
+Both pages declare these URLs as their canonical addresses. Internal page and asset links are relative.
+
+Domain setup status as of 2026-10-06: the owner has purchased `shemesh-moving.co.il`. Public DNS is verified: the apex A record points to `75.2.60.5`, and the `www` CNAME points to `shemeshmovingaddcampaign.netlify.app`. Both custom domains have valid HTTPS. Netlify's primary domain is `www.shemesh-moving.co.il`, and the apex redirects to it; this behavior is verified.
+
+The site source includes the expanded service area, custom-domain analytics allowlist, and `www` canonical URLs. Domain redirects are managed in Netlify. After deployment, verify both page URLs and confirm event receipt in GA4 Realtime.
+
+Existing Netlify production pages:
 
 - Small moves: https://shemeshmovingaddcampaign.netlify.app/
 - Apartments: https://shemeshmovingaddcampaign.netlify.app/apartments.html
 
-Netlify publishes the repository root with no build command or environment variables. The public Analytics measurement ID is included in `campaign.js`; it is not a secret. The original GitHub Pages site remains unchanged.
+Netlify automatic publishing from the `main` branch of `github.com/NimLordia/ShemeshMovingLandingPage` is confirmed enabled. It publishes the repository root with no build command or environment variables. The public Analytics measurement ID is included in `campaign.js`; it is not a secret. The original GitHub Pages site remains unchanged.

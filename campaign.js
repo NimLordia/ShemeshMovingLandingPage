@@ -3,7 +3,12 @@
 const serviceType = document.body.dataset.page === 'apartment' ? 'apartment' : 'small';
 const measurementId = 'G-DCFPN7JWW8';
 // Keep local development and Netlify deploy previews out of production reports.
-const analyticsEnabled = window.location.hostname === 'shemeshmovingaddcampaign.netlify.app';
+const analyticsHostnames = new Set([
+  'shemesh-moving.co.il',
+  'www.shemesh-moving.co.il',
+  'shemeshmovingaddcampaign.netlify.app'
+]);
+const analyticsEnabled = analyticsHostnames.has(window.location.hostname);
 
 if (analyticsEnabled) {
   window.dataLayer = window.dataLayer || [];
@@ -24,8 +29,8 @@ if (analyticsEnabled) {
 }
 
 const intro = serviceType === 'apartment'
-  ? 'שלום שמש הובלות, הגעתי דרך עמוד הובלות הדירה ואשמח להצעת מחיר להובלת דירת 1–3 חדרים בתוך חיפה והקריות.'
-  : 'שלום שמש הובלות, הגעתי דרך עמוד ההובלות הקטנות ואשמח להצעת מחיר לפריטים בודדים או להובלה קטנה בתוך חיפה והקריות.';
+  ? 'שלום שמש הובלות, הגעתי דרך עמוד הובלות הדירה ואשמח להצעת מחיר להובלת דירת 1–3 חדרים באזור השירות שלכם.'
+  : 'שלום שמש הובלות, הגעתי דרך עמוד ההובלות הקטנות ואשמח להצעת מחיר לפריטים בודדים או להובלה קטנה באזור השירות שלכם.';
 const fields = [
   ...(serviceType === 'apartment' ? ['מספר חדרים: '] : []),
   'מה צריך להעביר: ',
