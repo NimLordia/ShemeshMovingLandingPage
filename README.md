@@ -2,6 +2,8 @@
 
 Hebrew RTL static pages built from the original company poster and favicon.
 
+Website: [www.shemesh-moving.co.il](https://www.shemesh-moving.co.il/).
+
 ## Campaign destinations
 
 - `index.html`: small moves and individual items.
@@ -38,6 +40,10 @@ The Google tag can use analytics cookies. Google signals and advertising persona
 
 ### Reports and verification
 
+Verified on 2026-10-06 in the owner's **Shemesh Moving** GA4 property: the owner's Realtime screenshot shows both landing-page titles, 9 `page_view` events, and 2 `contact_click` events. Event receipt is confirmed. The earlier empty reports were from the wrong Analytics stream/property. The owner subsequently confirmed `contact_click` was saved in the Key events tab with a filled star. The reviewed settings use no default monetary value, once-per-event counting, and the existing website code. These contact clicks do not establish that WhatsApp messages were sent. Receipt of a newly marked key event remains to be verified.
+
+The owner's 2026-10-06 screenshots confirm the Google Ads account link and the conversion **Shemesh Moving (web) contact_click** were created successfully. The settings reviewed immediately before linking enabled auto-tagging and disabled personalized advertising and access to Analytics features from within Google Ads. The created conversion uses the existing `contact_click` key event, is categorized as **Contact**, and is **Secondary**. Its saved conversion counting and monetary-value settings remain to be reviewed. Google Ads attribution and campaign configuration have not yet been verified.
+
 - Use **Realtime** to check recent visits and `contact_click` events after deployment. Browser blockers can prevent collection.
 - Use **Pages and screens**, with **Page path and screen class**, for visits to each URL. The built-in **Content group** dimension combines the small-move page's `/` and `/index.html` addresses under `small`.
 - To use `contact_placement` or `service_type` as dimensions in standard reports, register each under **Admin → Custom definitions** as an event-scoped custom dimension with the matching event parameter.
@@ -59,7 +65,7 @@ Both pages declare these URLs as their canonical addresses. Internal page and as
 
 Domain setup status as of 2026-10-06: the owner has purchased `shemesh-moving.co.il`. Public DNS is verified: the apex A record points to `75.2.60.5`, and the `www` CNAME points to `shemeshmovingaddcampaign.netlify.app`. Both custom domains have valid HTTPS. Netlify's primary domain is `www.shemesh-moving.co.il`, and the apex redirects to it; this behavior is verified.
 
-The site source includes the expanded service area, custom-domain analytics allowlist, and `www` canonical URLs. Domain redirects are managed in Netlify. After deployment, verify both page URLs and confirm event receipt in GA4 Realtime.
+Production commit `9c4f418` includes the expanded service area, custom-domain analytics allowlist, and `www` canonical URLs. Both public pages and event receipt in GA4 Realtime are verified. Domain redirects are managed in Netlify.
 
 Existing Netlify production pages:
 
