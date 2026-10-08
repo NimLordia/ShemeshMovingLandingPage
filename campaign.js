@@ -28,11 +28,10 @@ if (analyticsEnabled) {
   document.head.appendChild(googleTag);
 }
 
-const intro = serviceType === 'apartment'
-  ? 'שלום שמש הובלות, הגעתי דרך עמוד הובלות הדירה ואשמח להצעת מחיר להובלת דירת 1–3 חדרים באזור השירות שלכם.'
-  : 'שלום שמש הובלות, הגעתי דרך עמוד ההובלות הקטנות ואשמח להצעת מחיר לפריטים בודדים או להובלה קטנה באזור השירות שלכם.';
+// Both campaign URLs offer the same customer experience; attribution stays in GA4.
+const intro = 'שלום שמש הובלות, אשמח להצעת מחיר להובלה באזור השירות שלכם.';
 const fields = [
-  ...(serviceType === 'apartment' ? ['מספר חדרים: '] : []),
+  'מספר חדרים (אם רלוונטי): ',
   'מה צריך להעביר: ',
   'מיקום האיסוף: ',
   'יעד ההובלה: ',
