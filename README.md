@@ -15,18 +15,18 @@ The new headline is exactly **הובלות קטנות וגדולות באיזו�
 
 Top navigation includes **דף הבית** and **שאלות ותשובות**. `navigation.js` opens one panel at a time while preserving the current campaign path and query parameters. Browser back/forward and direct FAQ fragments work. Without JavaScript, all sections remain available as a normal page. The FAQ has one WhatsApp contact button after all answers.
 
-Pickup and destination must both be within the service area below. The FAQ states that disassembly/reassembly is available at an additional charge. The pages contain no invented reviews, guarantees, insurance claims, or fixed price promises.
+At least one address, pickup or destination, must be within the service area below; for example, Haifa to Jerusalem is possible. The FAQ states that disassembly/reassembly is available at an additional charge and packing is also offered as a separate service. The pages contain no invented reviews, guarantees, insurance claims, or fixed price promises.
 
 ## Service area
 
-Updated on 2026-09-16 from the owner's instructions:
+Geographic coverage updated on 2026-09-16; pickup/destination eligibility updated on 2026-10-09 from the owner's instructions:
 
 - Base: Haifa; Haifa and the Krayot are included.
 - East: up to and including Kiryat Tivon.
 - North: up to Acre (Akko), excluding Acre itself.
 - South: up to and including Pardes Hanna.
 - Include all Hof HaCarmel communities.
-- Both pickup and destination must be inside this area; a job does not have to start or end in Haifa.
+- Either pickup or destination must be inside this area; the other address may be outside it. For example, Haifa to Jerusalem is possible.
 
 These boundaries apply to both service pages. Page copy and WhatsApp templates reflect them; website changes do not configure Google Ads or Meta location targeting.
 
