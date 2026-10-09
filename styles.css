@@ -18,11 +18,9 @@ h1,h2,p{margin:0}
 .page-nav a:hover::after,.page-nav a[aria-current="page"]::after{transform:scaleX(1)}
 .page{position:relative;display:grid;min-height:calc(100svh - var(--nav-height) - 1px);overflow:hidden;place-items:center;background:var(--blue)}
 .page::before{content:'';position:absolute;inset:-6vmax;background:url('shemesh-original.jpg') center / cover no-repeat;filter:blur(18px);opacity:.42;transform:scale(1.04)}
-.poster-group{position:relative;width:min(100vw,calc((100svh - var(--nav-height) - 32px) / 1.35));background:var(--blue);isolation:isolate}
-.poster{position:relative;width:100%;aspect-ratio:4/5}
-.poster-image{display:block;width:100%;height:100%;object-fit:cover}
-.poster-headline{position:relative;width:93%;aspect-ratio:11/1;margin:0 auto 16px;overflow:hidden;mix-blend-mode:screen}
-.poster-headline img{position:absolute;display:block;width:100%;height:auto;left:0;top:50%;transform:translateY(-47.5%)}
+.poster-group{position:relative;width:min(100%,calc((100svh - var(--nav-height) - 1px) * 1081 / 1351))}
+.poster{position:relative;width:100%;aspect-ratio:1081/1351}
+.poster-image{display:block;width:100%;height:auto}
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
     .whatsapp-link {
       position: absolute;
@@ -109,6 +107,5 @@ details[open]>summary span{transform:rotate(45deg)}
 .analytics-notice summary span{font-size:20px}
 .analytics-notice p{padding:10px 0 12px;line-height:1.8}
 .analytics-notice a{text-underline-offset:3px}
-@media(max-aspect-ratio:4/5){.poster-group{width:100vw}}
 @media(max-width:600px){:root{--nav-height:58px}.page-nav{gap:24px}.page-nav a{font-size:14px}.content-panel{padding:38px 22px 48px}.section-kicker{font-size:13px}.section-intro{font-size:17px;margin-top:16px;margin-bottom:28px}.faq-list summary{font-size:17px;padding-block:20px}.faq-list details>p{font-size:16px}.contact-button{font-size:14px;padding:14px 19px;gap:12px}.site-footer{padding-inline:22px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}

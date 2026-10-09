@@ -9,9 +9,9 @@ Website: [www.shemesh-moving.co.il](https://www.shemesh-moving.co.il/).
 - `index.html`: small moves and individual items.
 - `apartments.html`: one-, two-, and three-room apartment moves.
 
-Both pages look identical: the same poster, headline, navigation, FAQ, contact links, and WhatsApp message. Only the canonical URL and invisible `data-page` campaign identifier differ. The campaign destinations remain `/` (small moves) and `/apartments.html` (apartment moves); assign each campaign its respective URL. URL-based grouping identifies the landing-page variant; the actual advertising source still depends on the campaign's auto-tagging or UTM parameters.
+Both pages look identical: the same poster, navigation, FAQ, contact links, and WhatsApp message. Only the canonical URL and invisible `data-page` campaign identifier differ. The campaign destinations remain `/` (small moves) and `/apartments.html` (apartment moves); assign each campaign its respective URL. URL-based grouping identifies the landing-page variant; the actual advertising source still depends on the campaign's auto-tagging or UTM parameters.
 
-The new headline is exactly **הובלות קטנות וגדולות באיזור חיפה**, placed in a slim strip above the full poster to preserve the illustration and keep the line readable on mobile. The original lettering is custom artwork embedded in the JPEG; no original font file is available. `shemesh-headline.png` is a close visual recreation of that lettering, not an exact recovered font. Its black background is blended away by CSS. The accessible H1 supplies the same phrase as real text. Ordinary navigation and body text use self-hosted Heebo, licensed in `OFL-Heebo.txt`.
+The added headline strip was removed on 2026-10-09. The unchanged original poster displays at its natural 1081:1351 proportions, scaled to fit beneath the navigation without cropping or an added top bar. The visually hidden H1 retains **הובלות קטנות וגדולות באיזור חיפה** for accessibility. Ordinary navigation and body text use self-hosted Heebo, licensed in `OFL-Heebo.txt`.
 
 Top navigation includes **דף הבית** and **שאלות ותשובות**. `navigation.js` opens one panel at a time while preserving the current campaign path and query parameters. Browser back/forward and direct FAQ fragments work. Without JavaScript, all sections remain available as a normal page. The FAQ has one WhatsApp contact button after all answers.
 
@@ -58,7 +58,7 @@ All contact links open WhatsApp: the original poster's phone-number hotspot and 
 
 ## Hosting
 
-Serve this directory with any static server. Publish the two HTML pages, `styles.css`, `campaign.js`, `navigation.js`, `shemesh-original.jpg`, `shemesh-headline.png`, PNG favicon, Heebo font files, and font license. Use the selected final domain in campaign URLs. The source can stay on GitHub independently of hosting.
+Serve this directory with any static server. Publish the two HTML pages, `styles.css`, `campaign.js`, `navigation.js`, `shemesh-original.jpg`, PNG favicon, Heebo font files, and font license. Use the selected final domain in campaign URLs. The source can stay on GitHub independently of hosting.
 
 Preferred final URLs, with `www.shemesh-moving.co.il` as primary:
 
@@ -82,9 +82,9 @@ Netlify automatic publishing from the `main` branch of `github.com/NimLordia/She
 
 The original landing-page design is restored for publication through the existing `main`-branch Netlify workflow. Run `node --test tests/campaign.test.cjs` for tracking regression checks. Local browser checks cover identical campaign content, responsive layouts, panel navigation, history, direct fragment links, no-JavaScript fallback, preserved advertising query parameters, and isolated tracking calls without sending test events to production. The original poster is byte-for-byte unchanged. Screenshots from the two campaign URLs are pixel-identical at desktop, mobile, narrow mobile, and landscape sizes; the phone hotspot maintains a minimum 44px tap height.
 
-## Custom headline asset
+## Archived custom headline asset
 
-Final file: `shemesh-headline.png`. Created with the built-in image-generation tool using the unchanged `shemesh-original.jpg` as a lettering reference. The original poster file is never regenerated. Final generation prompt:
+Unused file retained for reference: `shemesh-headline.png`. The pages no longer load this asset. Created with the built-in image-generation tool using the unchanged `shemesh-original.jpg` as a lettering reference. The original poster file is never regenerated. Final generation prompt:
 
 ```text
 Create a clean custom Hebrew lettering image. Reference image is the existing poster; use ONLY the style and exact shapes of its white custom Hebrew letters, especially הובלות and חזקים בעדינות. Do not include any poster illustration or phone number.
