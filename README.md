@@ -9,13 +9,13 @@ Website: [www.shemesh-moving.co.il](https://www.shemesh-moving.co.il/).
 - `index.html`: small moves and individual items.
 - `apartments.html`: one-, two-, and three-room apartment moves.
 
-Both pages look identical: the same poster, headline, navigation, FAQ, draft values, contact links, and WhatsApp message. Only the canonical URL and invisible `data-page` campaign identifier differ. The campaign destinations remain `/` (small moves) and `/apartments.html` (apartment moves); assign each campaign its respective URL. URL-based grouping identifies the landing-page variant; the actual advertising source still depends on the campaign's auto-tagging or UTM parameters.
+Both pages look identical: the same poster, headline, navigation, FAQ, contact links, and WhatsApp message. Only the canonical URL and invisible `data-page` campaign identifier differ. The campaign destinations remain `/` (small moves) and `/apartments.html` (apartment moves); assign each campaign its respective URL. URL-based grouping identifies the landing-page variant; the actual advertising source still depends on the campaign's auto-tagging or UTM parameters.
 
 The new headline is exactly **הובלות קטנות וגדולות באיזור חיפה**, placed in a slim strip above the full poster to preserve the illustration and keep the line readable on mobile. The original lettering is custom artwork embedded in the JPEG; no original font file is available. `shemesh-headline.png` is a close visual recreation of that lettering, not an exact recovered font. Its black background is blended away by CSS. The accessible H1 supplies the same phrase as real text. Ordinary navigation and body text use self-hosted Heebo, licensed in `OFL-Heebo.txt`.
 
-Top navigation includes **דף הבית**, **שאלות ותשובות**, and **ערכים**. `navigation.js` opens one panel at a time while preserving the current campaign path and query parameters. Browser back/forward and direct FAQ/values fragments work. Without JavaScript, all sections remain available as a normal page. FAQ answers retain the current service information. Values are provisional copy for owner review.
+Top navigation includes **דף הבית** and **שאלות ותשובות**. `navigation.js` opens one panel at a time while preserving the current campaign path and query parameters. Browser back/forward and direct FAQ fragments work. Without JavaScript, all sections remain available as a normal page. The FAQ has one WhatsApp contact button after all answers.
 
-Pickup and destination must both be within the service area below. Disassembly/reassembly is available as part of moving, not as a standalone handyman service. The pages contain no invented reviews, guarantees, insurance claims, or fixed price promises.
+Pickup and destination must both be within the service area below. The FAQ states that disassembly/reassembly is available at an additional charge. The pages contain no invented reviews, guarantees, insurance claims, or fixed price promises.
 
 ## Service area
 
@@ -54,7 +54,7 @@ The owner's 2026-10-06 screenshots confirm the Google Ads account link and the c
 - Reporting and GA4 account settings must be verified in the owner's Analytics account; the website code does not create custom dimensions or mark key events automatically.
 - No Google Ads conversion tag, Tag Manager container, or Meta Pixel is installed.
 
-All contact links open WhatsApp: the original poster's phone-number hotspot and the buttons in the FAQ and values panels. Telephone auto-detection is disabled; there are no phone-call links. Panel navigation does not create another page-view event or change the campaign identifier.
+All contact links open WhatsApp: the original poster's phone-number hotspot and the single button at the end of the FAQ panel. Telephone auto-detection is disabled; there are no phone-call links. Panel navigation does not create another page-view event or change the campaign identifier.
 
 ## Hosting
 
@@ -80,7 +80,7 @@ Netlify automatic publishing from the `main` branch of `github.com/NimLordia/She
 
 ## Restoration verification — 8 October 2026
 
-The original landing-page design is restored for publication through the existing `main`-branch Netlify workflow. Run `node --test tests/campaign.test.cjs` for tracking regression checks. Local browser checks cover identical campaign content, responsive layouts, FAQ/values navigation, history, direct fragment links, no-JavaScript fallback, preserved advertising query parameters, and isolated tracking calls without sending test events to production. The original poster is byte-for-byte unchanged. Screenshots from the two campaign URLs are pixel-identical at desktop, mobile, narrow mobile, and landscape sizes; the phone hotspot maintains a minimum 44px tap height.
+The original landing-page design is restored for publication through the existing `main`-branch Netlify workflow. Run `node --test tests/campaign.test.cjs` for tracking regression checks. Local browser checks cover identical campaign content, responsive layouts, panel navigation, history, direct fragment links, no-JavaScript fallback, preserved advertising query parameters, and isolated tracking calls without sending test events to production. The original poster is byte-for-byte unchanged. Screenshots from the two campaign URLs are pixel-identical at desktop, mobile, narrow mobile, and landscape sizes; the phone hotspot maintains a minimum 44px tap height.
 
 ## Custom headline asset
 

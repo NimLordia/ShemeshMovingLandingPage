@@ -37,7 +37,7 @@ function runCampaign({ service = 'small', hostname = 'www.shemesh-moving.co.il' 
   const location = Object.freeze({ hostname, href, search: new URL(href).search });
   const contacts = ['header', 'artwork', 'footer'].map((placement) =>
     link('https://wa.me/972508804928', { contact: 'whatsapp', placement }));
-  const navigation = [link('#faq'), link('#values')];
+  const navigation = [link('#home'), link('#faq')];
   const scripts = [];
   const window = {
     location,
@@ -133,11 +133,11 @@ test('analytics loads only on the exact production hostname allowlist', () => {
   }
 });
 
-test('FAQ and values navigation stays untouched and sends no contact events', () => {
+test('Home and FAQ navigation stays untouched and sends no contact events', () => {
   const page = runCampaign();
   const before = page.calls();
   page.navigation.forEach((anchor) => assert.equal(anchor.click().defaultPrevented, false));
-  assert.deepEqual(page.navigation.map((anchor) => anchor.href), ['#faq', '#values']);
+  assert.deepEqual(page.navigation.map((anchor) => anchor.href), ['#home', '#faq']);
   assert.deepEqual(page.calls(), before);
   assert.equal(page.window.location.href, page.href);
 });

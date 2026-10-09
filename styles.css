@@ -8,7 +8,7 @@ a{color:inherit}
 a,summary{-webkit-tap-highlight-color:transparent}
 a:focus-visible,summary:focus-visible{outline:3px solid var(--ink);outline-offset:5px}
 [hidden]{display:none!important}
-h1,h2,h3,p{margin:0}
+h1,h2,p{margin:0}
 .skip-link{position:fixed;top:10px;right:10px;transform:translateY(-160%);z-index:50;background:#fff;padding:10px 20px}
 .skip-link:focus{transform:translateY(0)}
 .site-header{position:sticky;top:0;z-index:10;background:var(--blue);border-bottom:1px solid rgb(35 31 32 / 16%)}
@@ -103,11 +103,6 @@ details[open]>summary span{transform:rotate(45deg)}
 .faq-list details>p{max-width:690px;padding:0 0 25px 24px}
 .contact-button{display:inline-flex;justify-content:center;align-items:center;gap:20px;max-width:100%;margin-top:36px;padding:15px 24px;border-radius:999px;background:var(--ink);color:#fff;font-size:16px;font-weight:700;line-height:1.7;text-decoration:none}
 .contact-button:hover{background:#3b3538}
-.values-list{border-top:1px solid rgb(35 31 32 / 35%)}
-.values-list article{display:flex;gap:30px;padding:28px 0;border-bottom:1px solid rgb(35 31 32 / 35%)}
-.value-number{font-size:14px;padding-top:5px}
-h3{font-size:25px;line-height:1.35;margin-bottom:10px}
-.values-list p{max-width:625px}
 .site-footer{padding:12px 24px;background:var(--blue)}
 .analytics-notice{max-width:760px;margin-inline:auto;font-size:13px}
 .analytics-notice summary{padding:8px 0;font-size:13px}
@@ -115,5 +110,5 @@ h3{font-size:25px;line-height:1.35;margin-bottom:10px}
 .analytics-notice p{padding:10px 0 12px;line-height:1.8}
 .analytics-notice a{text-underline-offset:3px}
 @media(max-aspect-ratio:4/5){.poster-group{width:100vw}}
-@media(max-width:600px){:root{--nav-height:58px}.page-nav{gap:24px}.page-nav a{font-size:14px}.content-panel{padding:38px 22px 48px}.section-kicker{font-size:13px}.section-intro{font-size:17px;margin-top:16px;margin-bottom:28px}.faq-list summary{font-size:17px;padding-block:20px}.faq-list details>p,.values-list p{font-size:16px}.values-list article{gap:20px;padding-block:24px}h3{font-size:22px}.contact-button{font-size:14px;padding:14px 19px;gap:12px}.site-footer{padding-inline:22px}}
+@media(max-width:600px){:root{--nav-height:58px}.page-nav{gap:24px}.page-nav a{font-size:14px}.content-panel{padding:38px 22px 48px}.section-kicker{font-size:13px}.section-intro{font-size:17px;margin-top:16px;margin-bottom:28px}.faq-list summary{font-size:17px;padding-block:20px}.faq-list details>p{font-size:16px}.contact-button{font-size:14px;padding:14px 19px;gap:12px}.site-footer{padding-inline:22px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
