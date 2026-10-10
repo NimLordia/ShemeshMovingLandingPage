@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://www.shemesh-moving.co.il/sitemap.xml
